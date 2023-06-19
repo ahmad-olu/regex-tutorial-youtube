@@ -1,0 +1,118 @@
+
+
+========================    PATTERNS  =============================
+============================ 1 ==================================
+!!!  Character Classes
+\s      - White space
+\S      - Not white space
+\d      - Digit
+\D      - Not digit
+\w      - Word
+\W      - Not word
+
+
+!!!    Special Characters
+\n      - New line
+
+!!!   Anchors
+^       - Start of string
+$       - End of string
+
+
+!!!  Quantifiers
+*       - 0 or more
++       - 1 or more
+?       - 0 or 1
+{3}     - Exactly 3
+{3,}    - 3 or more
+{3,5}   - 3, 4 or 5
+
+!!!    Groups and Ranges
+.          - Any character except new line (\n)
+(a|b)      - a or b
+(...)      - Group
+(?:...)    - non-capturing group
+[abc]      - Range (a or b or c)
+[^abc]     - Not a or b or c
+[a-q]      - Letter between a and q
+[A-Q]      - Upper case letter between A and Q
+[0-7]      - Digit between 0 and 7
+\n         - nth group/subpattern
+
+!!!     Escape Character
+\        - Escape Character
+
+!!!   Metacharacters (must be escaped)
+^     $        (
+)     <        .
+*     +        ?
+[     {        \
+|     >
+
+
+!!!      String Replacement (Backreferences)
+$2       - "xyz" in /^(abc(xyz))$/
+$1       - "xyz" in /^(?:abc)(xyz)$/
+
+
+
+============================ 2 Others ==================================
+!!!  Character Classes
+\c      - Control character
+\x      - Hexadecimal
+\O      - Octal digit
+
+!!!    Special Characters
+\r      - Carriage return
+\v      - Vertical tab
+\f      - Form feed
+\xxx    - Octal character xxx
+\xhh    - Hex character hh
+
+!!!   Anchors
+\A      - Start of string
+\Z      - End of string
+\b      - Word boundary
+\B      - Not word boundary
+\<      - Start of word
+\>      - End of word
+
+!!!    Pattern Modifiers
+m     - Multiple lines
+s     - Treat string as single line
+x     - Allow comments and white space in pattern
+e     - Evaluate replacement
+U     - Ungreedy pattern
+
+!!!      String Replacement (Backreferences)
+$'       - After matched string
+$+       - Last matched string
+$&       - Entire matched string
+
+!!!    Pattern Modifiers
+g     - Global match
+i     - Case-insensitive
+
+!!!    Special Characters
+\t      - Tab
+
+!!!      String Replacement (Backreferences)
+$n       - nth non-passive group
+$`       - Before matched string
+
+Assertions
+?=                 - Lookahead assertion
+?!                 - Negative lookahead
+?<=                - Lookbehind assertion
+?!= or ?<!         - Negative lookbehind
+?>                 - Once-only Subexpression
+?()                - Condition [if then]
+?()|               - Condition [if then else]
+?#                 - Comment
+
+
+
+
+
+
+

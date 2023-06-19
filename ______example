@@ -1,0 +1,23 @@
+
+//phone number
+
+\d\d\d-\d\d\d-\d\d\d
+\d\d\d.\d\d\d.\d\d\d
+\d\d\d[.-]\d\d\d[.-]\d\d\d
+\d{3}[.-]\d{3}[.-]\d{4}
+
+//email
+[a-zA-Z0-9]+@[a-zA-Z]+\.com
+[a-zA-Z0-9.]+@[a-zA-Z]+\.(com|co.uk)
+[a-zA-Z0-9.-]+@[a-zA-Z-]+\.(com|co.uk)
+
+//address
+
+^\d+\s+[\w\s]+$
+
+//zip code
+^\d{5}$
+^[0-9]{4,5}$
+
+ip address
+^(\d{1,3}\.){3}\d{1,3}$
